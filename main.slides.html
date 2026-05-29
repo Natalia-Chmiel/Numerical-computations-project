@@ -7504,7 +7504,27 @@ $$i\hbar \frac{\partial}{\partial t} \Psi(x,t) =  \hat{H} \Psi(x,t)$$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Przekszta%C5%82cenie-modelu-matematycznego">Przekształcenie modelu matematycznego<a class="anchor-link" href="#Przekszta%C5%82cenie-modelu-matematycznego">¶</a></h2><p>$$i\hbar \frac{\partial}{\partial t} \Psi(x,t) = \left[ -\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} + V(x) \right] \Psi(x,t)$$</p>
 <p>$$\iff i\hbar \frac{\partial}{\partial t} [\Psi(x) \cdot \phi(t)] = \left[ -\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} + V(x) \right] [\Psi(x) \cdot \phi(t)]$$</p>
-<p>$$\iff i\hbar \cdot \Psi(x) \frac{\partial}{\partial t}\phi(t) = \left[ -\frac{\hbar^2}{2m} \frac{\partial^2 \Psi(x)}{\partial x^2} + V(x)\Psi(x) \right] \phi(t)$$</p>
+<p>$$\iff i\hbar \cdot \Psi(x) \frac{\partial \phi(t)}{\partial t} = \left[ -\frac{\hbar^2}{2m} \frac{\partial^2 \Psi(x)}{\partial x^2} + V(x)\Psi(x) \right] \phi(t) \quad \Bigg| : \big(\Psi(x) \cdot \phi(t)\big)$$</p>
+<p>$$\iff i\hbar \frac{1}{\phi(t)} \frac{\partial \phi(t)}{\partial t} = \frac{1}{\Psi(x)} \left[ -\frac{\hbar^2}{2m} \frac{\partial^2 \Psi(x)}{\partial x^2} + V(x)\Psi(x) \right]$$</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Zauważmy, że lewa strona równania zależy tylko od czasu, a prawa strona zależy tylko od przestrzeni. Oznacza to, że obie strony muszą być równe tej samej stałej, którą oznaczymy jako $E$ (energia układu):</p>
+<p>$$
+\begin{cases} 
+\displaystyle i\hbar \frac{1}{\phi(t)} \frac{d\phi(t)}{dt} = E \\[15pt]
+\displaystyle \frac{1}{\Psi(x)} \left[ -\frac{\hbar^2}{2m} \frac{d^2\Psi(x)}{dx^2} + V(x)\Psi(x) \right] = E 
+\end{cases}
+$$</p>
+<p>Stąd otrzymujemy równanie, na którym się skupimy:
+$$\frac{1}{\Psi(x)} \left[ -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x) \right] = E \quad \Bigg| \cdot \big(\Psi(x)\big)$$</p>
+<p>$$\iff -\frac{\hbar^2}{2m} \frac{d^2 \Psi(x)}{dx^2} + V(x)\Psi(x) = E \cdot \Psi(x)$$</p>
 </div>
 </div>
 </div>
