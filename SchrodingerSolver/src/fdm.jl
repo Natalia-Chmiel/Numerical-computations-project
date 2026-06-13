@@ -13,7 +13,7 @@ function solve_FDM(V::Vector{Float64}, x::Vector{Float64}, m::Float64, planck::F
     H = SymTridiagonal(main_diag, under_diag)
     
     eigenvalues, eigenvectors = eigen(H)
-    eigenvectors = eigenvectors ./ sqrt.(dx)  # 
+    eigenvectors = eigenvectors ./ sqrt.(dx) 
     
     return eigenvalues, eigenvectors
 end
