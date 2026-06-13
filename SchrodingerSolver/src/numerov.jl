@@ -1,0 +1,1 @@
+# zrobic funckcje o nazwie solve_Numerov
