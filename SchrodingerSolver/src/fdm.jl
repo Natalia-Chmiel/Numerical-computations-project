@@ -1,5 +1,22 @@
 using LinearAlgebra
 
+
+"""
+solve_FDM(V::Vector{Float64}, x::Vector{Float64}, m::Float64, planck::Float64)
+
+Rozwiązuje jednowymiarowe, niezależne od czasu równanie Schrodingera przy użyciu Metody Różnic Skończonych (FDM).
+
+# Argumenty:
+- `V`: Wektor (`Vector{Float64}`) zawierający wartości potencjału w węzłach siatki przestrzennej.
+- `x`: Wektor (`Vector{Float64}`) punktów siatki przestrzennej.
+- `m`: Masa cząstki (`Float64`).
+- `planck`: Zredukowana stała Plancka (`Float64`).
+
+# Zwraca:
+- Krotkę `(eigenvalues, eigenvectors)`:
+  - `eigenvalues`: Wektor obliczonych wartości własnych (poziomów energii).
+  - `eigenvectors`: Macierz wektorów własnych (funkcji falowych), gdzie każda kolumna odpowiada danej energii. Wektory są automatycznie znormalizowane.
+"""
 function solve_FDM(V::Vector{Float64}, x::Vector{Float64}, m::Float64, planck::Float64)
 
     N = length(x)
