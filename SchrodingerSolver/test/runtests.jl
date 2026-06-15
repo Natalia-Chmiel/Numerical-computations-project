@@ -4,7 +4,7 @@ using SchrodingerSolver
 @testset "SchrodingerSolver.jl Tests" begin
     
     x = collect(range(0.0, 1.0, length=1000))
-    V = zeros(length(x)) # Potencjał równy 0 wewnątrz studni
+    V = zeros(length(x))
     m = 1.0
     planck = 1.0
     
@@ -17,9 +17,9 @@ using SchrodingerSolver
     end
 
     @testset "Test Metody Numerova" begin
-        energies_num, wavefuncs_num = solve_Numerov(V, x, m, planck)
+        E_num, wavefuncs_num = solve_Numerov(V, x, m, planck, E_analytic_1)
          
-        @test isapprox(energies_num[1], E_analytic_1, rtol=0.001)
+        @test isapprox(E_num, E_analytic_1, rtol=0.001)
     end
 
 end
