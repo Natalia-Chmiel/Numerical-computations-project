@@ -6,9 +6,7 @@ W ramach projektu zaimplementowano dwie metody numeryczne:
 1. **Metodę Różnic Skończonych (FDM)** - rozwiązanie problemu własnego rzadkiej macierzy trójprzekątnej.
 2. **Metodę Numerowa** - zoptymalizowany algorytm dedykowany do równań różniczkowych drugiego rzędu bez pierwszej pochodnej.
 
-Pakiet wyznacza stany stacjonarne (dozwolone poziomy energii i funkcje falowe) dla różnych układów potencjału. Ostatecznym wynikiem projektu jest wykorzystanie tych stanów do symulacji pełnej ewolucji czasowej dla zależnego od czasu równania Schrödingera.
-
-Następnie testujemy je na różnych potencjałach i porównujemy wyniki.
+Pakiet wyznacza stany stacjonarne (dozwolone poziomy energii i funkcje falowe) dla różnych układów potencjału, testujemy je i porównujemy wyniki. Ostatecznym wynikiem projektu jest wykorzystanie tych stanów do symulacji pełnej ewolucji czasowej dla zależnego od czasu równania Schrödingera.
 
 ## Grupa
 * Julia Zalewska 
